@@ -1,0 +1,327 @@
+html {
+    box-sizing:border-box;
+    font-size: 62.5%;
+    }
+  
+  body{
+    margin: 0;
+    background-color: #F3F5FC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.6rem;
+  }
+  
+  .headerBox{
+    width: 100%;
+    position: relative;
+    margin: 1rem auto;
+  }
+  
+  nav{
+      position: absolute;
+      top: 80%;
+      right: 28.8rem;
+      display: flex;
+      flex-direction: row;
+  }
+  
+  nav li{
+    display: inline;
+    margin: 0 0 0 1.6rem;
+  }
+  
+  nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: bolder;
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+  
+  nav a:hover{
+    color:#0A3871;
+    text-decoration: underline;
+  }
+  
+  main{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  }
+
+  .canvasArea{
+    position: absolute;
+    margin-left: 6em;
+    left: 36%;
+  }
+
+  .canvas{
+    font-size: 1.6rem;
+
+  }
+
+  .mobileKeyboard{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 24%;
+    margin-left: 1em;
+    left: 0%;
+    top: 68%;
+  }
+
+  .rowOne{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  .rowTwo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 16%;
+    margin-top: 4%;
+  }
+
+  .rowThree{
+    display: flex;
+    flex-direction: row;
+    margin-left: 32%;
+    margin-top: 4%;
+  }
+
+  .ganasteMensaje{
+    box-sizing: border-box;
+    padding: 0.8rem;
+    position: absolute;
+    width: 28rem;
+    height: 16rem;
+    left: 44%;
+    top: 8rem;
+    border: 0.2rem solid #0A3871;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: #495057;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #0A3871;
+  
+  }
+
+  .perdisteMensaje{
+    box-sizing: border-box;
+    padding: 0.8rem;
+    position: absolute;
+    width: 28rem;
+    height: 16rem;
+    left: 44%;
+    top: 8rem;
+    border: 0.2rem solid #0A3871;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #0A3871;
+  
+  }
+
+  .input_word{
+    /*Ingresa el texto aquí*/
+  position: absolute;
+  width: 58rem;
+  height: 34rem;
+  left: 32%;
+  top: 2.4rem;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 540;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  justify-content: baseline;
+  
+  color: #0A3871;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  resize: none;
+  
+  }
+  
+  .useRestrictionArea{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  
+  position: absolute;
+  width: auto;
+  height: 1.8rem;
+  left: 32%;
+  top: 38rem;
+  }
+  
+  .exclamationMarkSvg{
+  
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  }
+  
+  .useRestrictionText{
+  position: relative;
+  width: auto;
+  height: 2rem;
+  left: 16%;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  
+  color: #495057;
+  
+  }  
+
+  .buttonsCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem;
+  
+  position: absolute;
+  width: 6.8;
+  height: 6.8rem;
+  left: 40%;
+  top: 40%;
+  }
+  
+  .iniciarJuegoButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.4rem;
+  width: 32rem;
+  height: 8.8rem;
+  left: 0%;
+  top: 0rem;
+  background: #0A3871;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: center;
+  justify-content: center;
+  
+  }
+  
+  .iniciarJuegoButton:hover{
+    background: #052051;
+    transform: scale(1.1);
+  }
+  
+  .iniciarJuegoButton:disabled{
+  opacity: 0.3;
+  transform: none;
+  background: #0A3871;
+  }
+  
+  .iniciarJuegoButton:active{
+    border-color: white;
+  }
+  
+  .agregarPalabraButton{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.4rem;
+    width: 32rem;
+    height: 8.8rem;
+    left: 0%;
+    top: 0rem;
+    background: #D8DFE8;
+    border-radius: 2.4rem;
+    cursor: pointer;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .agregarPalabraButton:hover{
+    background: #E9ECF8;
+    transform: scale(1.1);
+  }
+  
+  .agregarPalabraButton:disabled{
+  opacity: 0.3;
+  transform: none;
+  background: #D8DFE8;
+  }
+  
+  .buttonsBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0rem;
+    position: absolute;
+    width: 6.8;
+    height: 6.8rem;
+    left: 30%;
+    }
+
+  .nuevoJuegoButton{
+    width: 33rem;
+    height: 8.9rem;
+    left: 0%;
+    top: 0rem;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-top:20px;
+    margin-left: 5px;
+  }
+
+  
+  
